@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:@1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+a,i{
+    font-size: 22px;
+}
+#header{
+    background: rgb(1,1,1);
+}
+.mid-header img{
+    width:120px;
+    height:70px;
+}
+.right-header button{
+    background: rgb(174,39,12);
+}
+.right-header button:hover{
+    background: rgb(155, 35, 11);
+}
+#navbar-section{
+    background: url(../uploads/nav-bg.jpg)
+}
+.navbar{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #17181D 100%);
+}
+/* section navbar ends */
+/* section body design starts */
+.body{
+    width: 100%;
+    background:url(../uploads/home-background.jpg);
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-color: #000;
+    position: relative;
+    background-size: cover;
+    background-position: top center;
+    overflow: hidden;
+}
+.body-content{
+    top:30%;
+    left:10%;
+}
+.body-content h1{
+    font-weight: bold;
+}
+.body-content h2{
+    color: rgb(242,50,12) !important;
+    font-weight: bold;
+}
+.body-content h2:after {
+  background: rgb(242,50,12);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+}
+.body-content h2:after {
+  left: 0.5em;
+  margin-right: -50%;
+  margin-top: -2%;
+}
+.body-content p{
+    font-size: 20px;
+}
+.explore{
+    background: rgb(24,59,148) !important;
+    width: 20%;
+}
+.info{
+    outline:1px solid rgb(209,49,15);
+}
+.info:hover{
+    background: rgb(209,49,15);
+    color: #fff;
+}
+/* section body design ends */
