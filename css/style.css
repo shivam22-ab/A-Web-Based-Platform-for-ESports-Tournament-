@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
 *{
     margin:0;
     padding: 0;
     box-sizing:border-box ;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    overflow-x: hidden;
 }
 a,i{
-    font-size: 22px;
+    font-size: 20px;
 }
 #header{
-    background: rgb(1,1,1);
+    background: rgb(18,24,28);
 }
-.mid-header img{
+.mid-header .header-image img{
     width:120px;
     height:70px;
 }
@@ -21,13 +24,72 @@ a,i{
 .right-header button:hover{
     background: rgb(155, 35, 11);
 }
+#navbar,#navbar-section,.mobile-nav,#home-navbar{
+    background: url(../uploads/nav-bg.jpg);
+}
+.line::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #797979;
+}
 #navbar-section{
-    background: url(../uploads/nav-bg.jpg)
+    top:0;
+    z-index: 1;
 }
 .navbar{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #17181D 100%);
 }
+.nav-items a, .mobile-link a{
+    color:#d4d4d4 !important;
+}
+.nav-items a.active, .nav-items a:hover,.mobile-link li a:hover, .mobile-link li a.active {
+   border-bottom: 4px solid rgb(66,107,255);
+   color:#fff !important;
+}
+.nav-items .dropdown-menu{
+    background: rgb(18,24,28);
+    border: 2px solid rgb(113, 113, 113);
+}
+.nav-items .dropdown-menu a:hover{
+    background: rgb(18,24,28) !important;
+    color: #fff !important;
+    border-bottom: none;
+}
+.nav-items .dropdown-menu::after{
+    position: absolute;
+    right:0;
+    top: -22px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #797979;
+}
 /* section navbar ends */
+/* Mobile navigation starts */
+.ham-navigation{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #000;
+}
+.tournament .top-nav{
+    background: rgb(28,37,44);
+}
+.toggle-btn{
+    background: #fff !important;
+    outline: none !important;
+}
+.ham-navigation .dropdown-menu{
+    width: 30%;
+    margin: auto;
+}
+/* Mobile navigation ends */
 /* section body design starts */
 .body{
     width: 100%;
@@ -41,14 +103,15 @@ a,i{
     overflow: hidden;
 }
 .body-content{
-    top:30%;
+    top:20%;
     left:10%;
 }
 .body-content h1{
     font-weight: bold;
+    font-size: 50px;
 }
 .body-content h2{
-    color: rgb(242,50,12) !important;
+    color: rgb(242,50,12);
     font-weight: bold;
 }
 .body-content h2:after {
@@ -80,3 +143,250 @@ a,i{
     color: #fff;
 }
 /* section body design ends */
+
+/* tournament details design starts */
+
+.player-num, .registration-time{
+    background: rgb(28,37,44);
+    border-radius: 0 0 30px 30px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+}
+.clock-icon i{
+    font-size: 25px;
+}
+.tournament-details{
+    margin-bottom: 10px;
+    border-bottom: 3px solid #3a3a3a;;
+}
+.type-text{
+    float: right;
+}
+.details-head{
+    font-weight: bold;
+}
+.end-details img{
+    width: 50px;
+    height: 50px;
+}
+/* tournament details design ends */
+/* steps design starts */
+.steps,.standings{
+    background: rgb(22,29,34);
+}
+.column{
+    background: rgb(33,42,49);
+    border: 2px solid rgb(73, 73, 73);
+}
+.profile svg{
+    border:2px solid rgb(45,174,255);
+    border-radius: 10px;
+    padding:5px;
+}
+.team svg{
+    border:2px solid rgb(167,59,190);
+    border-radius: 10px;
+    padding:5px;
+}
+.search svg{
+    border:2px solid rgb(247,147,30);
+    border-radius: 10px;
+    padding:5px;
+}
+.money svg{
+    border:2px solid rgb(126,226,108);
+    border-radius: 10px;
+    padding:5px;
+}
+/* steps design ends */
+/* Game-body design starts */
+.top-body{
+    background: linear-gradient(rgba(29,29,29,0.6),rgba(29,29,29,0.5)),url(../uploads/mbl-banner.jpg) center;
+    object-fit: cover;
+    height:600px;
+}
+.game-heading{
+    left:6%;
+    bottom: 0;
+}
+.game-image img{
+    width: 200px;
+    height: 200px;
+}
+#game-body h1{
+    color:#d7d7d7;
+    font-weight: 600;
+}
+.game-heading p{
+    color:#d7d7d7;
+    font-size: 20px;
+}
+.select .dropdown, .menu{
+    background: rgb(22,29,34) !important;
+}
+.select .dropdown:hover{
+    background: inherit;
+}
+.game-body{
+    background: rgb(22,29,34);
+}
+.game-content{
+    display: flex;
+    justify-content: space-between;
+}
+.game-content .select .dropdown{
+    margin-right:1.2rem;
+}
+.menu{
+    border: 1px solid rgb(113, 113, 113) !important;
+}
+.menu a{
+    font-size: 16px;
+}
+.menu a:hover{
+    background: inherit;
+}
+.tournaments-data{
+    padding: 0 2rem;
+}
+.tournaments-data .card img{
+    border-radius: 10px;
+}
+.tournaments-data .card{
+    border-radius: 10px;
+    background: rgb(34,45,53) !important;
+    color: #d7d7d7;
+    cursor: pointer;
+}
+.tournaments-data .card .type, .tournaments-data .card .join-btn{
+    background: rgb(77,88,96);
+    float: right;
+}
+.tournaments-data .card .type{
+    font-size: 15px;
+}
+.tournaments-data .card-body .card-link{
+    cursor: pointer;
+    color:rgb(163,175,184);
+}
+.tournaments-data .card:hover{
+    transition: .5s ease-in-out;
+    border-top: 3px solid rgb(66,107,255);
+    transform: translate(0,-3%);
+}
+/* Game-body design ends */
+/* tournament details design */
+#tournament-details{
+    top:0;
+    background: rgb(18,24,28);
+}
+.banner-img img{
+    height: 450px;
+    object-fit: cover;
+}
+.top-banner .mid-details img{
+    width: 300px;
+}
+.top-banner .mid-details .row .prize{
+    width: 100px;
+}
+.top-banner .mid-details .row .prize-text{
+    padding-left: 20px;
+    border-left: 2px solid rgb(113, 113, 113);
+}
+.prize-div h5::after{
+    content: '';
+    display: block;
+    width: 160%;
+    height: 2px;
+    background: rgb(81, 81, 81);
+    margin: 10px 0 20px 0;
+}
+/* tournament details design */
+/* cta design */
+.cta{
+    background: linear-gradient(to bottom,rgba(29,29,29,0.4),rgba(29,29,29,0.6)),url(../uploads/cta.jpg);
+    min-height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.cta-contents{
+    top:50%;
+    left: 5%;
+    transform: translate(0,-40%);
+}
+.cta-contents h3,.steps h3,.standings h3{
+    font-size: 2em;
+    font-weight: 600;
+}
+.cta-contents h4,.steps h4,.standings h4{
+    color: #9c9b9b;
+    font-size: 1.35em;
+}
+.cta-contents p{
+    font-family: 'Rubik', sans-serif;
+    color: #bfbfbf;
+    font-size: 1.05em;
+}
+.reg-team{
+    background: rgb(24,59,148) !important;
+}
+/* cta design */
+/* standings design */
+.standings table{
+    background: linear-gradient(to right,rgb(22,29,34),rgb(30, 36, 40));
+    border: 2px solid rgb(36, 36, 36);
+}
+.standings table tr:hover{
+    background: linear-gradient(to right,rgb(17, 23, 27),rgb(30, 34, 37));
+    color: #fff !important;
+    cursor: pointer;
+}
+.standings table tr{
+    border-top: hidden;
+}
+/* standings design */
+/* Responsive design starts */
+@media (max-width:1100px){
+    #header{
+        position:sticky;
+        top:0;
+        z-index: 1;
+    }
+    #navbar-section, .mid-header .header-image,#home-navbar{
+        display: none;
+    }
+    .ham-navigation{
+        display: block;
+    }
+}
+@media(max-width:900px) {
+    .game-content{
+        display: block;
+    }
+}
+@media(max-width:600px){
+    .tournaments-data{
+        padding: 5px !important;
+    }
+    .tournaments-data .card-link{
+        display: block !important;
+    }
+    .tournaments-data .card .type{
+        float: none;
+    }
+    .game-content .select{
+        display: block !important;
+    }
+    .game-content .select .dropdown{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+@media (max-width:480px){
+    .type-text{
+        float: none;
+    }
+}
+/* Responsive design ends */

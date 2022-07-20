@@ -1,20 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Homepage</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- custom css link -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <!-- fontawesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <!-- section header starts -->
-      <section id="header">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- section login and signup -->
+    <section id="log-form">
+        <div class="container forms">
+            <div class="form login">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="form-content">
+                    <header>Login</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options d-flex justify-content-center">
+                    <a href="#" target="_blank" class="mr-3">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                    <a href="#" target="_blank" class="mr-3">
+                        <i class="fa-brands fa-twitter-square"></i>
+                    </a>
+                    <a href="#" target="_blank" class="mr-3">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <header>Signup</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Create password" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="media-options d-flex justify-content-center">
+                    <a href="#" target="_blank" class="mr-3">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                    <a href="#" target="_blank" class="mr-3">
+                        <i class="fa-brands fa-twitter-square"></i>
+                    </a>
+                    <a href="#" target="_blank" class="mr-3">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section login and signup -->
+    <!-- section header starts -->
+    <section id="header">
         <div class="container-fluid p-2">
             <div class="header d-flex justify-content-around align-items-center">
                 <div class="left-header d-flex">
@@ -32,54 +135,373 @@
                     </a>
                 </div>
                 <div class="mid-header">
-                    <img src="./uploads/valorant.png" class="mr-5" alt="game-logo">
-                    <img src="./uploads/pubg.png" class="mr-5" alt="game-logo">
-                    <img src="./uploads/freefire.png" class="mr-5" alt="game-logo">
-                    <img src="./uploads/mobile-legend.png" class="mr-5" alt="game-logo">
+                    <div class="header-image">
+                        <img src="./uploads/valorant.png" class="mr-5" alt="game-logo">
+                        <img src="./uploads/pubg.png" class="mr-5" alt="game-logo">
+                        <img src="./uploads/freefire.png" class="mr-5" alt="game-logo">
+                        <img src="./uploads/mobile-legend.png" class="mr-5" alt="game-logo">
+                    </div>
                 </div>
                 <div class="right-header">
                     <a href="#">
-                        <button class="btn text-white">Sign in</button>
+                        <button class="btn text-white sign-in">Sign in</button>
                     </a>
                 </div>
             </div>
         </div>
-      </section>
-      <!-- section header ends -->
-      <!-- section navbar starts -->
-      <section id="navbar-section">
-        <div class="navbar d-flex justify-content-around p-5">
+        <!-- section mobile navbar starts -->
+        <div class="ham-navigation">
+            <nav class="navbar navbar-light py-4 white top-nav">
+                <div class="top-nav w-100 d-flex justify-content-between">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="#">
+                        <div class="image">
+                            <img src="uploads/logo.png" alt="logo">
+                        </div>
+                    </a>
+
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler toggle-btn" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse text-center mt-3 " id="navbarSupportedContent15">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto mobile-link py-5">
+                        <li class="nav-item py-4">
+                            <a class="nav-link d-inline p-3 active" href="#">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item py-4 dropdown">
+                            <a class="nav-link d-inline p-3 mr-5 dropdown-toggle ml-5" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tournaments
+                            </a>
+                            <div class="dropdown-menu mt-4 bg-transparent border text-muted mt-3 dropdown"
+                                aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Find Tournaments</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Host Tournaments</a>
+                            </div>
+                        </li>
+                        <li class="nav-item py-4">
+                            <a class="nav-link d-inline p-3" href="#">Players</a>
+                        </li>
+                        <li class="nav-item py-4">
+                            <a class="nav-link d-inline p-3" href="#">Videos</a>
+                        </li>
+                        <li class="nav-item py-4">
+                            <a class="nav-link d-inline p-3" href="#">Profile</a>
+                        </li>
+                    </ul>
+                    <!-- Links -->
+
+                </div>
+                <!-- Collapsible content -->
+
+            </nav>
+        </div>
+        <!-- section mobile navbar ends -->
+    </section>
+    <!-- section header ends -->
+    <!-- section navbar starts -->
+    <section id="home-navbar">
+        <div class="navbar d-flex justify-content-between p-5">
             <div class="logo"><img src="uploads/logo.png" alt="logo" class="navbar-brand"></div>
             <div class="nav-items navbar-expand-lg">
                 <ul class="navbar-nav">
-                    <li class="nav-item px-3"><a href="#" class="nav-link text-white mr-5">Home</a></li>
-                    <li class="nav-item px-3"><a href="#" class="nav-link text-white mr-5">Home</a></li>
-                    <li class="nav-item px-3"><a href="#" class="nav-link text-white mr-5">Home</a></li>
-                    <li class="nav-item px-3"><a href="#" class="nav-link text-white mr-5">Home</a></li>
-                    <li class="nav-item px-3"><a href="#" class="nav-link text-white mr-5">Home</a></li>
-                    <li class="nav-item px-3"><a href="#" class="nav-link text-white mr-5">Home</a></li>
+                    <li class="nav-items px-3"><a href="#" class="nav-link mr-5 active">Home</a></li>
+                    <li class="nav-items px-3 dropdown">
+                        <a class="nav-link mr-5 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tournaments
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Find Tournaments</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Host Tournaments</a>
+                        </div>
+                    </li>
+                    <li class="nav-items px-3"><a href="#" class="nav-link mr-5">Players</a></li>
+                    <li class="nav-items px-3"><a href="#" class="nav-link mr-5">Videos</a></li>
+                    <li class="nav-items px-3"><a href="#" class="nav-link mr-5">Dashboard</a></li>
                 </ul>
             </div>
         </div>
-      </section>
-      <!-- section navbar ends -->
-      <!-- section body starts -->
-      <section id="body">
+    </section>
+    <!-- section navbar ends -->
+    <!-- section body starts -->
+    <section id="body">
         <div class="body position-relative">
             <div class="body-content position-absolute px-5 text-white">
                 <h2 class="text-uppercase">Esport Tournaments</h2>
                 <h1>A Platform For ESports Players</h1>
-                <p>Tune into an amazing Esports tournament hosted by the different organization. <span class="d-block">Where you can participate and get a full overview of the tournament.</span></p>
+                <p>Tune into an amazing Esports tournament hosted by the different organization. <span
+                        class="d-block">Where you can participate and get a full overview of the tournament.</span></p>
                 <a href="#"><button class="btn btn-lg text-white explore mr-4">Explore</button></a>
                 <a href="#"><button class="btn btn-lg text-white info">More Information</button></a>
             </div>
         </div>
-      </section>
-      <!-- section body ends -->
+    </section>
+    <!-- section body ends -->
+    <!-- section steps starts -->
+    <section id="steps">
+        <div class="steps p-5">
+            <h3 class="text-center text-white">It's Easy to Get Started. Game On.</h3>
+            <h4 class="text-center text-muted mt-4">We helps you earn money while you play, create and share.</h4>
+            <div class="row p-5">
+                <div class="column col-12 col-sm-6 col-lg-3 text-white px-3 py-5 rounded">
+                    <p class="text-center profile"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            fill="rgb(45,174,255)" class="bi bi-person-badge-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z" />
+                        </svg></p>
+                    <h4 class="text-center">Sign up and create your profile</h4>
+                </div>
+                <div class="column col-12 col-sm-6 col-lg-3 text-white px-3 py-5 rounded">
+                    <p class="text-center team"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            fill="rgb(167,59,190)" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path fill-rule="evenodd"
+                                d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                        </svg></p>
+                    <h4 class="text-center">Search Players and make team</h4>
+                </div>
+                <div class="column col-12 col-sm-6 col-lg-3 text-white px-3 py-5 rounded">
+                    <p class="text-center search"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            fill="rgb(247,147,30)" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></p>
+                    <h4 class="text-center">Search tournaments and register</h4>
+                </div>
+                <div class="column col-12 col-sm-6 col-lg-3 text-white px-3 py-5 rounded">
+                    <p class="text-center money"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            fill="rgb(126,226,108)" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z" />
+                            <path
+                                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z" />
+                            <path
+                                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z" />
+                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
+                        </svg></p>
+                    <h4 class="text-center">Win tournaments and make money</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section steps ends -->
+    <!-- section cta -->
+    <section id="cta">
+        <div class="cta position-relative">
+            <div class="cta-contents position-absolute text-white">
+                <h4>Feel the rush, endure the hype, lets start gaming!</h4>
+                <h3 class="mt-4"><strong>WANT TO HAVE A PIECE OF THE ACTION?</strong></h3>
+                <p class="mt-3">Register your team until the end of June to get a chance to participate in the tournament. For visitors, see the link below to get tickets.</p>
+                <a href="#" class="btn text-white py-2 reg-team mt-3"><i class="fa fa-plus"></i>  REGISTER TEAM</a>
+            </div>
+        </div>
+    </section>
+    <!-- section cta -->
+    <!-- section standings -->
+    <section id="standings">
+        <div class="standings text-center p-5">
+            <h3 class="text-white">Calculate Standings</h3>
+            <h4>Easily find and analyze the winner team</h4>
+            <div class="row mt-5">
+                <div class="col-12 col-lg-6">
+                    <table class="table table-hover rounded text-white">
+                        <thead>
+                            <tr>
+                                <th><h5 style=" color: rgb(217, 54, 17)">Group A</h5></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                          <tr>
+                            <th scope="col">Competitor</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Kills Pts</th>
+                            <th scope="col">Placement Pts</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                <figure>
+                                <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-3.png"
+                                    alt="Wild Esports" width="40">
+                            </figure></td>
+                            <td>1</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <figure>
+                                    <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-2.png"
+                                        alt="Rogue Esports" width="40">
+                                </figure>
+                            </td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>20</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <figure>
+                                    <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-4.png"
+                                        alt="Gambit Esports" width="40">
+                                </figure>
+                            </td>
+                            <td>3</td>
+                            <td>20</td>
+                            <td>30</td>
+                            <td>50</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <figure>
+                                    <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-5.png"
+                                        alt="Entity Esports" width="40">
+                                </figure>
+                            </td>
+                            <td>1</td>
+                            <td>30</td>
+                            <td>10</td>
+                            <td>30</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <table class="table table-hover rounded text-white">
+                        <thead>
+                            <tr>
+                                <th><h5 style=" color: rgb(217, 54, 17)">Group B</h5></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                          <tr>
+                            <th scope="col">Competitor</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Kills Pts</th>
+                            <th scope="col">Placement Pts</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-4.png"
+                                            alt="Gambit Esports" width="40">
+                                    </figure>
+                                </td>
+                                <td>3</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>50</td>
+                              </tr>
+                          <tr>
+                            <td>
+                                <figure>
+                                <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-3.png"
+                                    alt="Wild Esports" width="40">
+                            </figure></td>
+                            <td>1</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>30</td>
+                          </tr>
+                         
+                          <tr>
+                            <td>
+                                <figure>
+                                    <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-5.png"
+                                        alt="Entity Esports" width="40">
+                                </figure>
+                            </td>
+                            <td>1</td>
+                            <td>30</td>
+                            <td>10</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <figure>
+                                    <img src="https://pixieclash-theme.pxsquad.com/demo1/wp-content/uploads/2022/06/Frame-2.png"
+                                        alt="Rogue Esports" width="40">
+                                </figure>
+                            </td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>20</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section standings -->
     <!-- Optional JavaScript -->
+    <script src="jquery/jquery3.6.js"></script>
+    <script src="js/hammenu.js"></script>
+    <script src="js/formdisplay.js"></script>
+    <!-- JavaScript -->
+    <script>
+        const forms = document.querySelector(".forms"),
+            pwShowHide = document.querySelectorAll(".eye-icon"),
+            links = document.querySelectorAll(".link");
+
+        pwShowHide.forEach(eyeIcon => {
+            eyeIcon.addEventListener("click", () => {
+                let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+
+                pwFields.forEach(password => {
+                    if (password.type === "password") {
+                        password.type = "text";
+                        eyeIcon.classList.replace("bx-hide", "bx-show");
+                        return;
+                    }
+                    password.type = "password";
+                    eyeIcon.classList.replace("bx-show", "bx-hide");
+                })
+
+            })
+        })
+
+        links.forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault(); //preventing form submit
+                forms.classList.toggle("show-signup");
+            })
+        })
+
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
