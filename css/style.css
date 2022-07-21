@@ -86,7 +86,7 @@ a,i{
     outline: none !important;
 }
 .ham-navigation .dropdown-menu{
-    width: 30%;
+    width: 50%;
     margin: auto;
 }
 /* Mobile navigation ends */
@@ -316,12 +316,12 @@ a,i{
     left: 5%;
     transform: translate(0,-40%);
 }
-.cta-contents h3,.steps h3,.standings h3{
+.cta-contents h3,.steps h3,.standings h3,.video-playlist h3{
     font-size: 2em;
     font-weight: 600;
 }
-.cta-contents h4,.steps h4,.standings h4{
-    color: #9c9b9b;
+.cta-contents h4,.steps h4,.standings h4,.video-playlist h4{
+    color: #9c9b9b !important;
     font-size: 1.35em;
 }
 .cta-contents p{
